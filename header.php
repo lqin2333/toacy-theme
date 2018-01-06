@@ -38,7 +38,27 @@
 							<!--/ End Header Widget -->
 						</div>
 					</div>
-				</div>		
+				</div>	
+
+								<!-- Header Inner -->
+				<div class="header-inner">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="nav-area">
+									<!-- Main Menu -->
+									<nav class="mainmenu">
+										<div class="collapse navbar-collapse">	
+											<?php 
+												wp_nav_menu(array("menu_class" => "nav navbar-nav"));
+											?>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</header>
 
 

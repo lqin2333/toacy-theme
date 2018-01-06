@@ -339,6 +339,7 @@ Version:	1.0
 			activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 			zIndex: 2147483647           // Z-Index for the overlay
 		});
+
     });
 		/*=====================================
 		21. Video Popup
@@ -424,5 +425,10 @@ Version:	1.0
             $(this).addClass("active");
 		});
 		
-	
+		/*=========================================
+		24. Add sub-menu class to level 3 submenus
+		===========================================*/
+		/*---------           Home page is level 1         ----------*/
+		/*--------- TODO: add sub-menu as class in php code----------*/
+		$('.header .nav li .drop-down ul.drop-down').addClass('sub-menu');
 })(jQuery);	
