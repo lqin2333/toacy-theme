@@ -298,6 +298,11 @@ input:-webkit-autofill:focus {
 .breadcrumbs ul li i{
 	margin-left:5px;
 }
+
+.breadcrumbs-no-image{
+	margin-top:10px;
+}
+
 #scrollUp {
 	right: 10px;
 	bottom: 12px;

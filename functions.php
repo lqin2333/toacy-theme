@@ -86,3 +86,36 @@ function toacy_widgets_init() {
 	) );		
 }
 add_action( 'widgets_init', 'toacy_widgets_init' );
+
+
+add_theme_support( 'post-thumbnails' );
+
+
+/**
+ * Generate breadcrumbs
+ */
+function get_breadcrumb($hasFeaturedImage) {
+	if($hasFeaturedImage)
+	{
+		echo '<ul class="bread-list">';
+		echo '<li><a href="'.home_url().'">Home <i class="fa fa-angle-right"> </i></a></li> ';
+	    if (is_category() || is_single()) {
+	    	if(is_single())
+	    	{
+	    		echo '<li class="active"><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+	    	}
+	    }
+	    elseif (is_page()) {
+	    	echo '<li class="active"><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+	    }
+	    elseif (is_search()) {
+	    	echo the_search_query();
+		}
+
+		echo '</ul>';
+	}
+	else
+	{
+		echo '<a href="'.home_url().'">Home </a> <i class="fa fa-angle-right"></i> <a href="'.get_permalink().'">'.get_the_title().'</a>';
+	}
+}
