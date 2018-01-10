@@ -6,20 +6,16 @@
  * @subpackage Toacy
  * @since Toacy v1.0
  */
-
 get_header(); ?>
-
-
+<!-- Slder section -->
 <section class="home-slider">
 	<?php echo do_shortcode('[metaslider id="26"]'); ?>
 </section>
-
-<!-- services section -->
+<!-- Our Services section -->
 <section id="services" class="services section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				
 					<?php 
 						$ourServicePage = get_posts(
 						    array( 'name'      => 'our-services',
@@ -34,13 +30,11 @@ get_header(); ?>
 							echo "<div class='row'><p>".$ourServicePage[0]->post_content."</p></div>";
 						}
 					?>
-				
 			</div>
 		</div>
 	</div>
 </section>
-
-
-
-
+<!-- Our Working Process section -->
+<section id="why-choose" class="why-choose working-process section">
+</section>
 <?php get_footer(); ?>
