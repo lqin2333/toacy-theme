@@ -86,47 +86,37 @@ function toacy_widgets_init() {
 	) );	
 
 	register_sidebar( array(
-		'name'          => __( 'Services Row 1', 'toacy' ),
-		'id'            => 'services-row-1',
+		'name'          => __( 'Services Section', 'toacy' ),
+		'id'            => 'services-section',
 		'description'   => __( 'Add widgets here to appear in home page services section.', 'toacy' ),
-		'before_widget' => '<div class="section-row">',
+		'before_widget' => '<div class="section-section-inner">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<div class="section-title"><h1>',
 		'after_title'   => '</h1></div>',
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Services Row 2', 'toacy' ),
-		'id'            => 'services-row-2',
-		'description'   => __( 'Add widgets here to appear in home page services section.', 'toacy' ),
-		'before_widget' => '<div class="section-row">',
+		'name'          => __( 'Process Section', 'toacy' ),
+		'id'            => 'process-section',
+		'description'   => __( 'Add widgets here to appear in home page process section.', 'toacy' ),
+		'before_widget' => '<div class="process-section-inner">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="section-title"><h1>',
-		'after_title'   => '</h1></div>',
 	) );
 
 
 	register_sidebar( array(
-		'name'          => __( 'Process Block 1', 'toacy' ),
-		'id'            => 'process-block-1',
-		'description'   => __( 'Add widgets here to appear in home page process section.', 'toacy' ),
-		'before_widget' => '<div class="col-md-4 col-sm-12 col-xs-12 fix">',
+		'name'          => __( 'Counter Section', 'toacy' ),
+		'id'            => 'counter-section',
+		'description'   => __( 'Add widgets here to appear in home page counter section.', 'toacy' ),
+		'before_widget' => '<div class="counter-section-inner">',
 		'after_widget'  => '</div>',
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Process Block 2', 'toacy' ),
-		'id'            => 'process-block-2',
-		'description'   => __( 'Add widgets here to appear in home page process section.', 'toacy' ),
-		'before_widget' => '<div class="col-md-4 col-sm-12 col-xs-12 fix">',
-		'after_widget'  => '</div>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Process Block 3', 'toacy' ),
-		'id'            => 'process-block-3',
-		'description'   => __( 'Add widgets here to appear in home page process section.', 'toacy' ),
-		'before_widget' => '<div class="col-md-4 col-sm-12 col-xs-12 fix">',
+		'name'          => __( 'Footer Contact Section', 'toacy' ),
+		'id'            => 'footer-contact-section',
+		'description'   => __( 'Add widgets here to appear in footer contact section.', 'toacy' ),
+		'before_widget' => '<div class="footer-contact-inner">',
 		'after_widget'  => '</div>',
 	) );
 }

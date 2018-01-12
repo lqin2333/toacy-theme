@@ -1,3 +1,18 @@
+
+
+			<section class="call-to-action">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="call-to-main">
+								<?php dynamic_sidebar( 'footer-contact-section' ); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
 			<footer id="footer" class="footer">
 				<div class="footer-top">
 					<div class="container">

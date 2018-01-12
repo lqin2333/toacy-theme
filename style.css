@@ -4600,6 +4600,8 @@ input:-webkit-autofill:focus {
 .footer.dark .footer-bottom{
 	border-top:1px solid rgba(204, 204, 204, 0.35);
 }
+
+.footer-contact-inner .textwidget p{margin-top:20px;}
 /*=======================
   End Footer CSS
 =========================*/ 
