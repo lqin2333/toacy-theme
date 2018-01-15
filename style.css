@@ -4601,7 +4601,20 @@ input:-webkit-autofill:focus {
 	border-top:1px solid rgba(204, 204, 204, 0.35);
 }
 
+/*--- custom added ---*/
 .footer-contact-inner .textwidget p{margin-top:20px;}
+h1.page-title{
+	font-size: 28px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 15px;
+	display: inline-block;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+	text-align: center;
+    width: 100%;
+}
+
 /*=======================
   End Footer CSS
 =========================*/ 
